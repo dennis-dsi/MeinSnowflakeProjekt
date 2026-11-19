@@ -1,0 +1,10 @@
+mein_dbt_projekt:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: ACCOUNTADMIN
+      warehouse: COMPUTE_WH
+      database: CRITICAL_LOOT
+      schema: FINAL
+      threads: 8
